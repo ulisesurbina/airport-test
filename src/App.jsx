@@ -105,6 +105,7 @@ const App = () => {
             <li>Los aeropuertos deben tener un mínimo de vuelos comerciales por semana para que aparezcan.</li>
             <li>Se excluyen aeropuertos militares y privados.</li>
             <li>Solo aparecen las ciudades con aeropuertos.</li>
+            <li>La busqueda se realiza en idioma inglés.</li>
           </ol>
           <h4>El token expira {token}</h4>
 

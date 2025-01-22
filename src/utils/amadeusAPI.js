@@ -2,6 +2,7 @@ import axios from 'axios';
 import qs from 'qs';
 
 const AMADEUS_API_URL = 'https://test.api.amadeus.com';
+const AMADEUS_API_URL_PROD = 'https://api.amadeus.com';
 const API_KEY = 'WypRBGXA4p6jti1m6MsSACMX9yNLsP5A';
 const API_SECRET = '2z3ryjDyFvenq4Vx';
 

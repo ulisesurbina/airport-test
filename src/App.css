@@ -235,6 +235,10 @@ i:nth-child(10) {
     width: 5rem;
     height: 5rem;
   }
+  .CardAirport__card h3,
+  .CardAirport__card p {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 599px) {
