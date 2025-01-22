@@ -1,0 +1,247 @@
+.LoadingScreen {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.LoadingScreen h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.LoadingScreen p {
+  font-size: 1.2rem;
+  color: #ffff;
+}
+
+.Hole {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+i {
+  display: block;
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  opacity: 0;
+  animation-name: scale;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 30rem;
+  -webkit-border-radius: 30rem;
+  -moz-border-radius: 30rem;
+  -ms-border-radius: 30rem;
+  -o-border-radius: 30rem;
+}
+
+i:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+i:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+i:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+i:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+i:nth-child(5) {
+  animation-delay: 1.5s;
+}
+
+i:nth-child(6) {
+  animation-delay: 1.8s;
+}
+
+i:nth-child(7) {
+  animation-delay: 2.1s;
+}
+
+i:nth-child(8) {
+  animation-delay: 2.4s;
+}
+
+i:nth-child(9) {
+  animation-delay: 2.7s;
+}
+
+i:nth-child(10) {
+  animation-delay: 3s;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    transform: scale(1) translate(0px, -5px);
+    opacity: 1;
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    transform: scale(0.1) translate(0px, 5px);
+    opacity: 0;
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0);
+  }
+}
+
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.NotesApi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CardAirport {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  width: 100%;
+}
+
+.CardAirport__map {
+  height: 15vh;
+}
+
+.InputSearchData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  width: 40%;
+}
+
+.InputSearchData ::placeholder {
+  font-size: 1vw;
+  line-height: 1.5vw;
+}
+
+.InputSearchData__input {
+  padding: 1vw;
+  border: 2px solid #888;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+  width: 80%;
+  font-size: 1vw;
+  line-height: 1.5vw;
+}
+
+.InputSearchData__back {
+  padding: 1vw 3vw;
+  border: 2px solid #888;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  margin: 3% 0;
+}
+
+.CardAirport__card {
+  border: 2px solid #888;
+  padding: 3rem;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+  box-shadow: 0px 0.5rem 2rem rgb(255 255 255 / 81%);
+}
+
+.ContainerHistory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  width: 60%;
+}
+
+.ContainerHistory__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ContainerHistory__buttons__previous {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.ContainerHistory__buttons__previous button {
+  background-color: rgb(41, 87, 43);
+}
+
+@media screen and (max-width: 899px) {
+  .InputSearchData ::placeholder {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  .InputSearchData__input {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    width: 100%;
+  }
+  .CardAirport {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .CardAirport__map {
+    height: 15rem;
+  }
+  .CardAirport__card {
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    padding: 1.5rem;
+  }
+  .InputSearchData__back {
+    padding: 0.5rem 2rem;
+    margin: 1.5rem 0;
+  }
+  .NotesApi {
+    align-items: baseline;
+  }
+  i {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .CardAirport {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .InputSearchData {
+    width: 60%;
+  }
+}
