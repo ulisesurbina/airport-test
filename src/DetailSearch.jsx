@@ -6,7 +6,7 @@ const DetailSearch = ({ results, goBack }) => {
     <section>
       <button className="InputSearchData__back" onClick={goBack}>Regresar</button>
       <div className="CardAirport">
-        {results.map((location) => (
+        {results.sort((a, b) => a.name.localeCompare(b.name)).map((location) => (
           <div key={location.id} className="CardAirport__card">
             <h2>Nombre del aeropuerto: <br /> <span>{location.name}</span></h2> 
             <h3>Código IATA: <span>{location.iataCode}</span></h3>
